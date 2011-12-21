@@ -21,3 +21,7 @@ end
 get '/tasks' do
   erb :tasks
 end
+
+get '/tasks/create' do
+  erb :tasks_create
+end

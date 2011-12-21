@@ -1,8 +1,28 @@
-<div class="topbar" data-scrollspy="scrollspy" >
+<div class="topbar">
   <div class="topbar-inner">
     <div class="container">
       <a class="brand" href="/dashboard"><%= PRODUCT_NAME %></a>
-		<%= render_navigation %>
+	  <ul class="nav" id="">
+		<li class="dropdown" id="tasks">
+			<a href="/tasks" class="dropdown">Tasks</a>
+			
+			<ul class="dropdown-menu" id="">
+				<li id="create">
+					<a href="/tasks/create">Create task</a>
+				</li>
+			</ul>
+		</li>
+		<li id="recipes">
+			<a href="/recipes">Recipes</a>
+		</li>
+		<li id="channels">
+			<a href="/channels">Channels</a>
+		</li>
+		<li class="nav secondary-nav" id="account">
+			<a href="/account">Account</a>
+		</li>
+	 </ul>
+		
     </div>
   </div>
 </div>

@@ -1,8 +1,8 @@
 SimpleNavigation::Configuration.run do |navigation|  
   navigation.items do |primary|
     
-    primary.item :tasks, 'Tasks', '/tasks' do |tasks|
-
+    primary.item :tasks, 'Tasks', '/tasks', :class => "dropdown" do |tasks|
+      tasks.item :create, 'Create task', '/tasks/create'
     end
     primary.item :recipes, 'Recipes', '/recipes' do |recipes|
 
