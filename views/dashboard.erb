@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard | <%= SITE_NAME %></title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le javascript -->
+    <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script>$(function () { prettyPrint() })</script>
+    <script src="/js/bootstrap-modal.js"></script>
+    <script src="/js/bootstrap-alerts.js"></script>
+    <script src="/js/bootstrap-twipsy.js"></script>
+    <script src="/js/bootstrap-popover.js"></script>
+    <script src="/js/bootstrap-dropdown.js"></script>
+    <script src="/js/bootstrap-scrollspy.js"></script>
+    <script src="/js/bootstrap-tabs.js"></script>
+    <script src="/js/bootstrap-buttons.js"></script>
+
+
+    <!-- Le styles -->
+    <link href="../bootstrap.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/ico/bootstrap-apple-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/ico/bootstrap-apple-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/ico/bootstrap-apple-114x114.png">
+  </head>
+
+  <body>
+
+    <!-- Topbar
+    ================================================== -->
+<%= erb :topbar %>
+
+   
+
+    <div class="container">
+
+
+
+<!-- Grid system
+================================================== -->
+<section id="grid-system">
+
+	<div class="page-header">
+	    <h1>Dashboard</h1>
+	 </div>
+	
+  <div class="row">
+    <div class="span4">
+      <h2>Tasks</h2>
+      <p>2 enabled </p>
+	  <p>2 total</p>
+	  <p><button class="btn">Create a task</button>&nbsp;<button class="btn">Your tasks</button></p>
+	
+	  <h2>Recipes</h2>
+	  <p>0 enabled</p>
+	  <p>0 total</p>
+	  <p><button class="btn">Your recipes</button></p>
+	  <h2>Invites</h2>
+	  <p>Tell your friends about Ninja</p>
+	  <p><button class="btn">Invite others</button></p>
+	
+    </div>
+	
+    <div class="span12">
+      <h2>Channels</h2>
+      <p>10 Channels with 175 possible task combinations.</p>
+		<ul class="media-grid">
+		       <li>
+		         <a href="#">
+		           <img class="thumbnail" src="img/channels/services/twitter_82.png" alt="" style="width:82px; height:82px;">
+		         </a>
+		       </li>
+		       <li>
+		         <a href="#">
+		           <img class="thumbnail" src="img/channels/services/facebook_82.png" alt="" style="width:82px; height:82px;">
+		         </a>
+		       </li>
+		       <li>
+		         <a href="#">
+		           <img class="thumbnail" src="img/channels/services/date_and_time_82.png" alt="" style="width:82px; height:82px;">
+		         </a>
+		       </li>
+		       <li>
+		         <a href="#">
+		           <img class="thumbnail" src="img/channels/services/email_82.png" alt="" style="width:82px; height:82px;">
+		         </a>
+		       </li>
+		       <li>
+		         <a href="#">
+		           <img class="thumbnail" src="img/channels/services/sms_82.png" alt="" style="width:82px; height:82px;">
+		         </a>
+		       </li>
+		       <li>
+		         <a href="#">
+		           <img class="thumbnail" src="img/channels/services/majel_82.png" alt="" style="width:82px; height:82px;">
+		         </a>
+		       </li>
+		       <li>
+		         <a href="#" rel="popover" data-content="A push-button is a simple switch mechanism for controlling some aspect of a machine or a process. Simple right?" data-original-title="Push-button">
+		           <img class="thumbnail" src="img/channels/hardware/button4leg.png" alt="" style="width:82px; height:82px;">
+				
+		         </a>
+		       </li>
+		       <li>
+		         <a href="#" rel="popover" data-content="An LED or Light Emitting Diode has a single action that turns on the LED." data-original-title="LED">
+		           <img class="thumbnail" src="img/channels/hardware/led.png" alt="" style="width:82px; height:82px;">
+		         </a>
+		       </li>
+		       <li>
+		         <a href="#" rel="popover" data-content="A photoresistor or light dependent resistor (LDR) is a resistor whose resistance decreases with increasing incident light intensity; in other words, it exhibits photoconductivity." data-original-title="LDR">
+		           <img class="thumbnail" src="img/channels/hardware/ldr.png" alt="" style="width:82px; height:82px;">
+		         </a>
+		       </li>
+		       <li>
+		         <a href="#" rel="popover" data-content="An accelerometer is a device that measures proper acceleration, also called the four-acceleration." data-original-title="Accelerometer">
+		           <img class="thumbnail" src="img/channels/hardware/accelerometer.png" alt="" style="width:82px; height:82px;">
+		         </a>
+		       </li>
+		       <li>
+		         <a href="#" rel="popover" data-content="A thermistor is a type of resistor whose resistance varies significantly with temperature, more so than in standard resistors." data-original-title="Thermistor">
+		           <img class="thumbnail" src="img/channels/hardware/temperature.png" alt="" style="width:82px; height:82px;">
+		         </a>
+		       </li>
+		       <li>
+		         <a href="#">
+		           <img class="thumbnail" src="img/channels/hardware/pot-slider.png" alt="" style="width:82px; height:82px;">
+		         </a>
+		       </li>
+		 </ul>
+		<p><button class="btn">Get more channels</button></p>
+    	</div>
+  </div>
+
+
+
+
+
+</section>
+
+
+	  <script>
+        $(function () {
+          $("a[rel=popover]")
+            .popover({
+              offset: 10
+            })
+            .click(function(e) {
+              e.preventDefault()
+            })
+        })
+
+
+      </script>
+
+    </div><!-- /container -->
+
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>
+          Designed and built with all the love in the world <a href="http://twitter.com/ninjaapp" target="_blank">@ninjaapp</a> by <a href="http://twitter.com/schappi" target="_blank">@schappi</a>, <a href="http://twitter.com/ninjaapp" target="_blank">@ninjaapp</a> by <a href="http://twitter.com/mwotton" target="_blank">@mwotton</a> and <a href="http://twitter.com/mad_z" target="_blank">@mad_z</a>.<br />
+          
+        </p>
+      </div>
+    </footer>
+
+
+
+
+  </body>
+</html>
